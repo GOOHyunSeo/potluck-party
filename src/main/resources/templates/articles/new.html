@@ -48,10 +48,18 @@
         </div>
     </div>
 </nav>
-<!--content-->
-    <div class="bg-dark text-white p-5">
-        <h3>[[${username}]]님, 또만나요</h3>
+<!--    content-->
+<form class="container" action="/article/create" method="post">
+    <div class="mb-3">
+        <label class="form-label" for="food">Food</label>
+        <input type="text" class="form-control" id="food" name="food" placeholder="What will you bring?">
     </div>
+    <div class="mb-3">
+        <label class="form-label" for="music">Music</label>
+        <textarea type="text" class="form-control" id="music" name="music" placeholder="Write your fav. music"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 <!--    site info-->
 <div>
