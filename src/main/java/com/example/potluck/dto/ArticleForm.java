@@ -1,5 +1,7 @@
 package com.example.potluck.dto;
 
+import com.example.potluck.entity.Article;
+
 public class ArticleForm {
     private String food;
     private String music;
@@ -16,5 +18,9 @@ public class ArticleForm {
                 "food='" + food + '\'' +
                 ", music='" + music + '\'' +
                 '}';
+    }
+
+    public Article toEntity() {
+        return new Article(null,food,music);
     }
 }
